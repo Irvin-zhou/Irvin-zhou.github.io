@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="title:  Nginxdate:  2021-03-04 16:19:59tags: Linuxcategories: Java  安装步骤 1234tar -zxvf nginx.tar.gz						#解压.&#x2F;configuremakemake install      常见错误 ![image-20210716151448353](&#x2F;Users&#x2F;zhouqiang&#x2F;Library&#x2F;Ap">
+  <meta name="description" content="mongoDB安装步骤1234567891011121314151617181920212223242526272829tar -zxvf mongodb-l*.tgz	#解压mkdir mongodb	#创建目录mkdir data	#创建数据库存放路径mkdir logs	#创建日志文件夹touch &#x2F;usr&#x2F;local&#x2F;mongodb&#x2F;logs&#x2F;mongodb.log		#输出路径vim &#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="随记">
-<meta property="og:url" content="http://example.com/2021/07/20/nginx/index.html">
+<meta property="og:title" content="MongoDB">
+<meta property="og:url" content="http://example.com/2021/03/04/mongo/index.html">
 <meta property="og:site_name" content="随记">
-<meta property="og:description" content="title:  Nginxdate:  2021-03-04 16:19:59tags: Linuxcategories: Java  安装步骤 1234tar -zxvf nginx.tar.gz						#解压.&#x2F;configuremakemake install      常见错误 ![image-20210716151448353](&#x2F;Users&#x2F;zhouqiang&#x2F;Library&#x2F;Ap">
+<meta property="og:description" content="mongoDB安装步骤1234567891011121314151617181920212223242526272829tar -zxvf mongodb-l*.tgz	#解压mkdir mongodb	#创建目录mkdir data	#创建数据库存放路径mkdir logs	#创建日志文件夹touch &#x2F;usr&#x2F;local&#x2F;mongodb&#x2F;logs&#x2F;mongodb.log		#输出路径vim &#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-20T05:28:08.000Z">
-<meta property="article:modified_time" content="2021-08-04T07:53:37.662Z">
+<meta property="article:published_time" content="2021-03-04T08:19:59.000Z">
+<meta property="article:modified_time" content="2021-08-04T08:21:36.013Z">
 <meta property="article:author" content="Irvin">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/07/20/nginx/">
+<link rel="canonical" href="http://example.com/2021/03/04/mongo/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title> | 随记</title>
+  <title>MongoDB | 随记</title>
   
 
 
@@ -150,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/20/nginx/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/mongo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          MongoDB
         </h1>
 
         <div class="post-meta">
@@ -173,15 +174,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-07-20 13:28:08" itemprop="dateCreated datePublished" datetime="2021-07-20T13:28:08+08:00">2021-07-20</time>
+              <time title="创建时间：2021-03-04 16:19:59" itemprop="dateCreated datePublished" datetime="2021-03-04T16:19:59+08:00">2021-03-04</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-04 15:53:37" itemprop="dateModified" datetime="2021-08-04T15:53:37+08:00">2021-08-04</time>
+                <time title="修改时间：2021-08-04 16:21:36" itemprop="dateModified" datetime="2021-08-04T16:21:36+08:00">2021-08-04</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
 
           
 
@@ -194,20 +204,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>title:  Nginx<br>date:  2021-03-04 16:19:59<br>tags: Linux<br>categories: Java</p>
-<hr>
-<p>安装步骤</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf nginx.tar.gz						#解压</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+        <h1 id="mongoDB"><a href="#mongoDB" class="headerlink" title="mongoDB"></a>mongoDB</h1><h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf mongodb-l*.tgz	#解压</span><br><span class="line">mkdir mongodb	#创建目录</span><br><span class="line">mkdir data	#创建数据库存放路径</span><br><span class="line">mkdir logs	#创建日志文件夹</span><br><span class="line">touch /usr/local/mongodb/logs/mongodb.log		#输出路径</span><br><span class="line">vim /etc/profile		#编辑环境变量</span><br><span class="line">	export MONGODB_HOME= /usr/local/mongodb</span><br><span class="line">	export PATH=$MONGODB_HOME/bin:$PATH</span><br><span class="line">vim /etc/mongodb.conf		#添加配置文件</span><br><span class="line">	#指定数据库路径</span><br><span class="line">	dbpath=/usr/local/mongodb/data</span><br><span class="line">	#指定MongoDB日志文件</span><br><span class="line">	logpath=/usr/local/mongodb/logs/mongodb.log</span><br><span class="line">	# 使用追加的方式写日志</span><br><span class="line">	logappend=<span class="literal">true</span></span><br><span class="line">	#端口号</span><br><span class="line">	port=<span class="number">27017</span> </span><br><span class="line">	#方便外网访问</span><br><span class="line">	bind_ip=<span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span></span><br><span class="line">	fork=<span class="literal">true</span> # 以守护进程的方式运行MongoDB，创建服务器进程</span><br><span class="line">	#auth=<span class="literal">true</span> #启用用户验证</span><br><span class="line">	#bind_ip=<span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> #绑定服务IP，若绑定<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>，则只能本机访问，不指定则默认本地所有IP</span><br><span class="line">mongod -f /etc/mongodb.conf	#配置文件方式启动</span><br><span class="line">mongod --shutdown -f /etc/mongodb.conf	#配置文件方式关闭</span><br><span class="line">#创建数据库以及管理员账号</span><br><span class="line">cd /usr/local/mongodb/bin</span><br><span class="line">./mongo</span><br><span class="line">&gt; use admin;</span><br><span class="line">&gt; db.createUser(&#123;user:&#x27;root&#x27;, pwd:&#x27;ebeta123&#x27;, roles:[&#123;role:&#x27;root&#x27;, db:&#x27;admin&#x27;&#125;]&#125;);</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-<p>常见错误</p>
-<p>![image-20210716151448353](/Users/zhouqiang/Library/Application Support/typora-user-images/image-20210716151448353.png)</p>
-<p>查看./configure 出现的错误信息去安装缺少的依赖包</p>
-<p>![image-20210720132750160](/Users/zhouqiang/Library/Application Support/typora-user-images/image-20210720132750160.png)</p>
-<p>解决：yum -y install zlib zlib-devel openssl openssl–devel pcre pcre-devel</p>
+<p>![image-20210720144910880](/Users/zhouqiang/Library/Application Support/typora-user-images/image-20210720144910880.png)</p>
 
     </div>
 
@@ -216,6 +215,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
+          </div>
 
         
 
@@ -223,12 +225,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/06/23/ES/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
+    <a href="/2021/03/04/nginx/" rel="prev" title="Nginx">
+      <i class="fa fa-chevron-left"></i> Nginx
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/07/23/mongo/" rel="next" title="">
-       <i class="fa fa-chevron-right"></i>
+    <a href="/2021/03/04/linux%E5%91%BD%E4%BB%A4/" rel="next" title="常用命令">
+      常用命令 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -288,6 +290,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#mongoDB"><span class="nav-number">1.</span> <span class="nav-text">mongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装步骤</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -301,16 +304,16 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
